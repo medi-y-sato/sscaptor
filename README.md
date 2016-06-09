@@ -1,9 +1,17 @@
+# スクリーンショット撮るだけ
+
+phantomjsを使って指定したページのスクリーンショットを保存します
+
+## 使いかた
+
 ```sh
 $ git clone https://github.com/medi-y-sato/sscaptor
 $ cd sscaptor/
 $ npm install
-$ npm run ss -- https://yahoo.jp
+$ npm run ss -- https://yahoo.jp device=iphone6 o=test.png
 ```
 
-実行したディレクトリに `ss.png` が生成されます
-ユーザエージェント iPhone6 としてアクセスします
+## オプション
+
+* `o` : 出力ファイル名
+* `device` : デバイスを指定(予め`userAgents`に定義したものの中から指定する)
