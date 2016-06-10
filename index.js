@@ -1,8 +1,8 @@
-var webPage = require('webpage');
+var webPage = require("webpage");
 var page = webPage.create();
 
-var system = require('system');
-var userAgents = require('./useragent.json');
+var system = require("system");
+var userAgents = require("./useragent.json");
 var ua, address, outputFileName;
 
 if (system.args.length === 1) {
