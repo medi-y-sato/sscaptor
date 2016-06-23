@@ -10,7 +10,7 @@ if (system.args.length === 1) {
   phantom.exit();
 }
 
-var args = {}
+var args = {};
 for(var i in system.args){
   if (i !== "0"){
     switch(true){
@@ -38,11 +38,11 @@ page.open(address, function(status) {
   if (status === "success") {
     page.evaluate(function() {
       document.body.bgColor = "white";
-    })
+    });
     window.setTimeout(function() {
       page.render(outputFileName,{format: "png", quality: "100"});
       phantom.exit();
-    }, 1000)
+    }, 1000);
   } else {
     console.error(status);
   }
