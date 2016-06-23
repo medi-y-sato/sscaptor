@@ -4,8 +4,7 @@
   "description": "screenshot captor",
   "main": "index.js",
   "scripts": {
-    "ss": "phantomjs index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ss": "phantomjs index.js"
   },
   "author": "",
   "license": "ISC",
